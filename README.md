@@ -46,7 +46,7 @@ These systems worked… but none were shared. None were reusable. None embodied 
 As engineers, we value **FOSS principles**, clarity, documentation, and continuous improvement.  
 So why not bring those same principles to our careers?
 
-**careerkit** is my attempt to create an **open, forkable, community-improvable job-search playbook** for engineering leadership roles (SRE, Platform, Infra, DevOps, AI Infra).
+**careerkit** is my attempt to create an **open, forkable, community-improvable job-search playbook** for engineering roles (SRE, Platform, Infra, DevOps, AI Infra) that is both useful for myself and valuable to others who I mentor.
 
 This guide captures:
 
@@ -69,12 +69,12 @@ Let’s build a shared ecosystem for navigating engineering careers with intenti
 # 👥 Who This Is For / Not For
 
 **For**  
-- Engineering leaders targeting SRE, Platform, Infra, DevOps, or AI Infra roles  
+- Engineers and engineering leaders targeting SRE, Platform, Infra, DevOps, AI Infra or other similar roles  
 - People who prefer intentional, low-noise searches with documented systems  
 - Builders who want a forkable playbook they can iterate on and contribute to  
 
 **Not for**  
-- Early-career or non-engineering searches  
+- Non-engineering searches  
 - High-volume spray-and-pray approaches  
 - Anyone looking for generic recruiter templates without customization  
 
@@ -110,11 +110,12 @@ A great job search for engineering leaders is:
 ## Fast Fit Filter  
 A role should pass the majority of these criteria:
 
-- Engineering leadership (SRE, Platform, Infra, DevOps, AI Infra)  
-- Remote US or hybrid in target cities  
-- Compensation ≥ $160k  
-- Ethical alignment (no weapons, gambling, destructive industries)  
 - JD is detailed, realistic, and recent  
+- Has the right title (e.g. Engineering leadership - SRE, Platform, Infra, DevOps, AI Infra, etc)  
+- Is in the right place (e.g. Remote US or hybrid in target cities)  
+- Has the right compensation (e.g. ≥ $180k + equity or a number that makes sense to you)  
+- Is ethically aligned (e.g. no weapons, gambling, destructive industries)
+- You feel legal won't disqualify you (e.g. Doesn't require security clearance and there are no visa sponsorship issues)
 
 ---
 
@@ -360,7 +361,7 @@ Immediately after applying:
 
 ---
 
-## 🧪 Interview Question Rubrics (Engineering Leadership)
+## 🧪 Interview Question Rubrics
 
 ### **1. Clarity & Structure**
 - Uses STAR/SPOT or similar  
@@ -371,7 +372,7 @@ Immediately after applying:
 - Quantifies results (MTTR, latency, throughput, cost, productivity)  
 - Shows ownership  
 
-### **3. Leadership Behaviors**
+### **3. Leadership Behaviors** (Engineering Leadership only)
 - Demonstrates decision-making, mentoring, collaboration  
 - Articulates tradeoffs  
 
@@ -464,17 +465,16 @@ Gemini creates blocks you can refine:
 
 - Expand automation: JobSpy ingestion → CSV/Sheet → tracker prefill with funding, location, posting age.  
 - Publish tracker and resume templates for easy forking.  
-- Add SOPs for “When to reach out” and “How to identify a real opportunity.”  
 - Build scripts for batching follow-ups and reminders.  
 - Add interview prep checklists and scoring sheets.  
-- Collect community playbook variants (forks) and highlight successful workflows.
+- Collect community playbook variants and highlight successful workflows.
 
 ---
 
 # 🤝 Contributing
 
 - Fork the repo and open a PR.  
-- Keep changes small and focused (docs, templates, scripts).  
-- Include a short note on why the change helps engineering leaders.  
+- Keep changes small and focused.
+- Include a short note on why the change is helpful..  
 - For new automation, document prerequisites and a minimal usage example.  
 - Feedback, edits, and new templates are all welcome.
