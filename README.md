@@ -96,18 +96,18 @@ A great job search for engineering leaders is:
 *A 60–120 minute workflow you can run on repeat.*
 
 1. Choose a comfortable location to work from (home office, library, coffee shop).  
-1. Open your laptop & close distractions.  
-1. Open:
+2. Open your laptop & close distractions.  
+3. Open:
   - Your focus playlist (e.g. [**Spotify "House Focus"**](https://open.spotify.com/playlist/37i9dQZF1DX8wtrGDH81Oa))
   - Your tracker sheet or Simplify/TealHQ  
   - ChatGPT, NotebookLM, or your AI coach of choice, ideally with a project or agent that has a tailored system prompt  
   - Resume templates & company notes Drive folders
-1. Review what's in your "Applied" column and update information, follow up if you haven't been in contact for over a week
-3. Look at your "Saved" column (e.g. in Google Sheets, [Teal](https://app.tealhq.com/job-tracker), or [Simplified](https://simplify.jobs/tracker)) to see if you want to remove or reorder it
-4. Search for two new prospects and assign an out of 5 excitement score (see below for more details on fit)
-5. Apply to two jobs & create or update a company notes doc for each
-6. Add any follow-up items to your TODO Tracker (e.g. [Trello](https://trello.com) or [Linear](https://linear.app)
-7. Update this document if you made any changes to your process
+4. Review what's in your "Applied" column and update information, follow up if you haven't been in contact for over a week
+5. Look at your "Saved" column (e.g. in Google Sheets, [Teal](https://app.tealhq.com/job-tracker), or [Simplified](https://simplify.jobs/tracker)) to see if you want to remove or reorder it
+6. Search for two new prospects and assign an out of 5 excitement score (see below for more details on fit)
+7. Apply to two jobs & create or update a company notes doc for each
+8. Add any follow-up items to your TODO Tracker (e.g. [Trello](https://trello.com) or [Linear](https://linear.app)
+9. Update this document if you made any changes to your process
 
 ## ⚡ Reference
 
