@@ -69,14 +69,13 @@ Let’s build a shared ecosystem for navigating engineering careers with intenti
 # 👥 Who This Is For / Not For
 
 **For**  
-- Engineers and engineering leaders targeting SRE, Platform, Infra, DevOps, AI Infra or other similar roles  
-- People who prefer intentional, low-noise searches with documented systems  
-- Builders who want a forkable playbook they can iterate on and contribute to  
+- Initially and primarily, this is a kit of tools for myself
+- Additionally, my hope is that it is also helpful for other engineers targeting SRE, Platform, Infra, DevOps, AI Infra or other similar roles 
 
 **Not for**  
-- Non-engineering searches  
-- High-volume spray-and-pray approaches  
-- Anyone looking for generic recruiter templates without customization  
+- Non-engineering job searches
+- People looking to use high-volume spray-and-pray approaches  
+- Anyone looking for generic recruiter templates without customization
 
 ---
 
@@ -96,14 +95,29 @@ A great job search for engineering leaders is:
 # 🗓️ Daily / Session Loop
 *A 60–120 minute workflow you can run on repeat.*
 
-## ⚡ Quick Reference
+1. Choose a comfortable location to work from (home office, library, coffee shop).  
+1. Open your laptop & close distractions.  
+1. Open:
+  - Your focus playlist (e.g. [**Spotify "House Focus"**](https://open.spotify.com/playlist/37i9dQZF1DX8wtrGDH81Oa))
+  - Your tracker sheet or Simplify/TealHQ  
+  - ChatGPT, NotebookLM, or your AI coach of choice, ideally with a project or agent that has a tailored system prompt  
+  - Resume templates & company notes Drive folders
+1. Review what's in your "Applied" column and update information, follow up if you haven't been in contact for over a week
+3. Look at your "Saved" column (e.g. in Google Sheets, [Teal](https://app.tealhq.com/job-tracker), or [Simplified](https://simplify.jobs/tracker)) to see if you want to remove or reorder it
+4. Search for two new prospects and assign an out of 5 excitement score (see below for more details on fit)
+5. Apply to two jobs & create or update a company notes doc for each
+6. Add any follow-up items to your TODO Tracker (e.g. [Trello](https://trello.com) or [Linear](https://linear.app)
+7. Update this document if you made any changes to your process
+
+## ⚡ Reference
 
 ### Where to Search
 - LinkedIn (Recommended, Alerts)  
-- Welcome to the Jungle — https://www.welcometothejungle.com  
+- Welcome to the Jungle — https://www.welcometothejungle.com
 - Wellfound — https://wellfound.com  
-- Hiring.cafe — https://hiring.cafe  
-- Optional: JobSpy → Google Sheets  
+- Hiring.cafe — https://hiring.cafe
+- [Teal](https://app.tealhq.com/job-search) or [Simplify](https://simplify.jobs/) if you use those tools. 
+# TODO: Jobspy Notebook?
 
 ---
 
@@ -119,7 +133,7 @@ A role should pass the majority of these criteria:
 
 ---
 
-## Recommended Tracking Columns
+## Recommended Tracking Columns For 
 
 | Column | Purpose |
 |--------|---------|
@@ -269,7 +283,7 @@ Else → skip quickly.
 ## Vetting  
 Evaluate:
 
-- Glassdoor (recent engineering reviews)  
+- Glassdoor (rating & recent engineering reviews)  
 - Crunchbase (funding + runway)  
 - Engineering blog and technical brand  
 - Mission alignment  
@@ -339,20 +353,6 @@ Immediately after applying:
 ---
 
 # 🧰 Resources & Automation
-
-## Environment Setup
-- Choose location (home office, library, coffee shop).  
-- Close distractions.  
-- Open:
-  - Tracker sheet  
-  - TealHQ  
-  - ChatGPT  
-  - Resume templates  
-  - Company notes + Q&A docs  
-- Optional: focus playlist —  
-  **Spotify "House Focus"**: https://open.spotify.com/playlist/37i9dQZF1DX8wtrGDH81Oa  
-
----
 
 ## Automation Ideas  
 - Build a JobSpy-powered ingestion pipeline to centralize discovered roles into a single CSV/Sheet for triage.  
