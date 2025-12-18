@@ -116,7 +116,7 @@ A great job search for engineering leaders is:
 - Welcome to the Jungle — https://www.welcometothejungle.com
 - Wellfound — https://wellfound.com  
 - Hiring.cafe — https://hiring.cafe
-- [Teal](https://app.tealhq.com/job-search) or [Simplify](https://simplify.jobs/) if you use those tools. 
+- [Teal](https://app.tealhq.com/job-search) or [Simplify](https://simplify.jobs/) if you use those tools
 # TODO: Jobspy Notebook?
 
 ---
