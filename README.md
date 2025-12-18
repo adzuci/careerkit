@@ -133,7 +133,7 @@ A role should pass the majority of these criteria:
 
 ---
 
-## Recommended Tracking Columns For 
+## Recommended Tracking Columns
 
 | Column | Purpose |
 |--------|---------|
