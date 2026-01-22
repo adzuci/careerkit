@@ -6,7 +6,7 @@ Accepted
 
 ## Context
 
-The interview prep includes a GKE cluster and node pool. We can either model these with direct resources (`google_container_cluster` and `google_container_node_pool`) or use the official Terraform module from Google.
+This stack includes a GKE cluster and node pool. We can either model these with direct resources (`google_container_cluster` and `google_container_node_pool`) or use the official Terraform module from Google.
 
 ## Decision
 
