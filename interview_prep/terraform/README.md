@@ -54,8 +54,8 @@ From this folder:
 terraform init
 terraform fmt
 terraform validate
-terraform plan -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"
-terraform apply -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"
+terraform plan -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s https://api.ipify.org)/32"
+terraform apply -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s https://api.ipify.org)/32"
 ```
 
 ### Required inputs
@@ -158,8 +158,8 @@ terraform validate
 ### 10) Plan and apply
 
 ```bash
-terraform plan -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"
-terraform apply -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"
+terraform plan -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s https://api.ipify.org)/32"
+terraform apply -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s https://api.ipify.org)/32"
 ```
 
 ### 11) Verify resources
@@ -180,7 +180,7 @@ kubectl get nodes
 ### 13) Clean up (avoid costs)
 
 ```bash
-terraform destroy -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"
+terraform destroy -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s https://api.ipify.org)/32"
 ```
 
 ## Deploy runbook
@@ -193,7 +193,7 @@ terraform destroy -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BU
    - `gcloud container clusters list`
    - `gcloud compute networks list`
    - `gsutil ls`
-6. Safe destroy: `terraform destroy -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"`.
+6. Safe destroy: `terraform destroy -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s https://api.ipify.org)/32"`.
 
 ## Testing harness
 
