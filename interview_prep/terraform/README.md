@@ -123,8 +123,8 @@ gcloud config set project YOUR_PROJECT
 ### 6b) Set region and zone defaults
 
 ```bash
-gcloud config set compute/region us-central1
-gcloud config set compute/zone us-central1-a
+gcloud config set compute/region us-east1
+gcloud config set compute/zone us-east1-b
 ```
 
 ### 7) Enable required APIs
@@ -173,7 +173,7 @@ gsutil ls
 ### 12) Get kubectl credentials (optional)
 
 ```bash
-gcloud container clusters get-credentials interview-gke --region us-central1
+gcloud container clusters get-credentials interview-gke --region us-east1-b
 kubectl get nodes
 ```
 
