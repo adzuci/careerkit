@@ -1,0 +1,71 @@
+# -----------------------------------------------------------------------------
+# terraform.tfvars.example - Example Variable Values
+# -----------------------------------------------------------------------------
+# Copy this file to terraform.tfvars and customize the values for your
+# environment before running terraform apply.
+#
+# Usage:
+#   cp terraform.tfvars.example terraform.tfvars
+#   # Edit terraform.tfvars with your values
+#   terraform plan
+#   terraform apply
+# -----------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+# REQUIRED: GCP Project Configuration
+# -----------------------------------------------------------------------------
+# Your GCP project ID (required - no default)
+project_id = "your-gcp-project-id"
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: Region and Zones
+# -----------------------------------------------------------------------------
+# Uncomment and modify to change from defaults
+# region = "us-central1"
+# zones  = ["us-central1-a", "us-central1-b", "us-central1-c"]
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: Cluster Configuration
+# -----------------------------------------------------------------------------
+# cluster_name       = "apollo-demo-cluster"
+# kubernetes_version = "latest"
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: Network Configuration
+# -----------------------------------------------------------------------------
+# network_name        = "apollo-demo-vpc"
+# subnet_name         = "apollo-demo-subnet"
+# subnet_cidr         = "10.0.0.0/24"
+# pods_cidr_range     = "10.1.0.0/16"
+# services_cidr_range = "10.2.0.0/20"
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: Node Pool Configuration
+# -----------------------------------------------------------------------------
+# node_pool_name     = "default-pool"
+# machine_type       = "e2-medium"
+# min_node_count     = 1
+# max_node_count     = 3
+# initial_node_count = 1
+# disk_size_gb       = 50
+# disk_type          = "pd-standard"
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: Application Configuration
+# -----------------------------------------------------------------------------
+# app_name      = "hello-app"
+# app_namespace = "default"
+# app_image     = "gcr.io/google-samples/hello-app:1.0"
+# app_replicas  = 3
+# app_port      = 8080
+# service_port  = 80
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: Environment and Labels
+# -----------------------------------------------------------------------------
+# environment = "demo"
+# labels = {
+#   managed-by = "terraform"
+#   project    = "apollo-interview"
+#   team       = "platform"
+# }

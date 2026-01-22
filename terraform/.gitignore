@@ -1,0 +1,41 @@
+# Terraform State Files
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Terraform Directory
+.terraform/
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Sensitive variable files
+terraform.tfvars
+*.auto.tfvars
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Credentials or secrets
+*.pem
+*.key
+credentials.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
