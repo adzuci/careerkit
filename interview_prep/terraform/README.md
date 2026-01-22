@@ -106,6 +106,12 @@ Then initialize the SDK:
 gcloud init
 ```
 
+### 4b) Install the GKE kubectl auth plugin
+
+```bash
+gcloud components install gke-gcloud-auth-plugin
+```
+
 ### 5) Authenticate for Terraform
 
 Terraform uses Application Default Credentials (ADC) for the Google provider. Run:
