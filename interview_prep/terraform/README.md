@@ -216,7 +216,7 @@ This runs `terraform fmt -check` and `terraform validate` to keep the config tid
 ```mermaid
 graph TD
   subgraph VPC[Custom VPC]
-    SUBNET[Primary Subnet (nodes)]
+    SUBNET[Primary Subnet - nodes]
     PODS[Pods secondary range]
     SVC[Services secondary range]
     ROUTER[Cloud Router]
@@ -224,8 +224,8 @@ graph TD
   end
 
   subgraph GKE[GKE Cluster]
-    CP[Control plane (Google-managed)]
-    NP[Node pool (VMs)]
+    CP[Control plane - Google-managed]
+    NP[Node pool - VMs]
     POD[Pods]
   end
 
