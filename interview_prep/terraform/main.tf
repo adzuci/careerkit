@@ -73,6 +73,7 @@ resource "google_compute_firewall" "allow_internal" {
   direction = "INGRESS"
   priority  = 1000
 
+  # Broad internal allow for interview simplicity; tighten for production.
   source_ranges = [var.subnet_cidr, var.pods_range, var.services_range]
 
   allow {
@@ -161,6 +162,7 @@ resource "google_container_node_pool" "primary_nodes" {
   cluster  = google_container_cluster.primary.name
   location = var.region
   node_count = var.gke_node_min_count
+  node_locations = var.zones
 
   autoscaling {
     min_node_count = var.gke_node_min_count
@@ -171,10 +173,6 @@ resource "google_container_node_pool" "primary_nodes" {
     machine_type    = var.gke_node_machine_type
     disk_size_gb    = var.gke_node_disk_size_gb
     service_account = google_service_account.gke_nodes.email
-
-    oauth_scopes = [
-      "https://www.googleapis.com/auth/cloud-platform"
-    ]
 
     labels = {
       env = var.environment

@@ -10,7 +10,13 @@ This folder contains a runnable Terraform example focused on GCP VPC, IAM, GKE, 
 
 ## If you found this while prepping
 
-If you have discovered this and are prepping for your own interview go to <find good references>.
+If you have discovered this and are prepping for your own interview, start here:
+
+- Terraform CLI docs: https://developer.hashicorp.com/terraform/cli
+- Google provider docs: https://registry.terraform.io/providers/hashicorp/google/latest/docs
+- GKE private clusters: https://cloud.google.com/kubernetes-engine/docs/concepts/private-cluster-concept
+- Cloud NAT: https://cloud.google.com/nat/docs/overview
+- Kubernetes basics: https://kubernetes.io/docs/concepts/
 
 ## Concept checklist
 
@@ -48,18 +54,23 @@ From this folder:
 terraform init
 terraform fmt
 terraform validate
-terraform plan -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET"
-terraform apply -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET"
+terraform plan -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"
+terraform apply -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"
 ```
 
 ### Required inputs
 
 - `project_id` and `gcs_bucket_name` are required.
+- `gke_master_authorized_cidr` is required to avoid a wide-open control plane.
 - Optional: `environment`, `region`, `zones`, and CIDR inputs in `variables.tf`.
 
 ## Full setup (step-by-step)
 
 These steps assume macOS. If you are on Linux/Windows, follow the equivalent Terraform + gcloud installation docs for your OS.
+
+### OpenTofu option (if required)
+
+If an interviewer or company prefers OpenTofu, you can typically use it as a drop-in replacement. Replace `terraform` with `tofu` in the commands below.
 
 ### 1) Create a GCP account and project
 
@@ -79,13 +90,14 @@ These steps assume macOS. If you are on Linux/Windows, follow the equivalent Ter
 ```bash
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
-terraform version
+terraform -version
 ```
 
 ### 4) Install the Google Cloud SDK (gcloud)
 
 ```bash
 brew install --cask google-cloud-sdk
+gcloud version
 ```
 
 Then initialize the SDK:
@@ -108,6 +120,13 @@ gcloud auth application-default login
 gcloud config set project YOUR_PROJECT
 ```
 
+### 6b) Set region and zone defaults
+
+```bash
+gcloud config set compute/region us-central1
+gcloud config set compute/zone us-central1-a
+```
+
 ### 7) Enable required APIs
 
 You can enable these in the GCP Console or via the CLI:
@@ -125,7 +144,8 @@ gcloud services enable \
 ### 8) Configure Terraform inputs
 
 - Pick a globally unique bucket name for `gcs_bucket_name`.
-- Optionally adjust CIDRs and region in `variables.tf`.
+- Pick a CIDR for `gke_master_authorized_cidr` (typically your public IP + /32).
+- Optionally adjust CIDRs, region, and zones in `variables.tf`.
 
 ### 9) Initialize and validate
 
@@ -138,8 +158,8 @@ terraform validate
 ### 10) Plan and apply
 
 ```bash
-terraform plan -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET"
-terraform apply -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET"
+terraform plan -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"
+terraform apply -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"
 ```
 
 ### 11) Verify resources
@@ -150,10 +170,17 @@ gcloud compute networks list
 gsutil ls
 ```
 
-### 12) Clean up (avoid costs)
+### 12) Get kubectl credentials (optional)
 
 ```bash
-terraform destroy -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET"
+gcloud container clusters get-credentials interview-gke --region us-central1
+kubectl get nodes
+```
+
+### 13) Clean up (avoid costs)
+
+```bash
+terraform destroy -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"
 ```
 
 ## Deploy runbook
@@ -161,12 +188,12 @@ terraform destroy -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BU
 1. Authenticate to GCP: `gcloud auth application-default login`.
 2. Set your project: `gcloud config set project YOUR_PROJECT`.
 3. Enable APIs (if needed): Compute Engine, Kubernetes Engine, IAM, Cloud Storage.
-4. Run the Terraform steps in the Runbook section.
+4. Run the Terraform steps in the Runbook section (include `gke_master_authorized_cidr`).
 5. Verify resources:
    - `gcloud container clusters list`
    - `gcloud compute networks list`
    - `gsutil ls`
-6. Safe destroy: `terraform destroy -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET"`.
+6. Safe destroy: `terraform destroy -var="project_id=YOUR_PROJECT" -var="gcs_bucket_name=UNIQUE_BUCKET" -var="gke_master_authorized_cidr=$(curl -s ifconfig.me)/32"`.
 
 ## Testing harness
 
@@ -178,30 +205,45 @@ From this folder:
 
 This runs `terraform fmt -check` and `terraform validate` to keep the config tidy and consistent.
 
+## Cost and cleanup notes
+
+- GKE, Cloud NAT, and egress traffic incur cost; keep the cluster short-lived if you are just practicing.
+- Enabling APIs is free, but the services you deploy are not.
+- The bucket uses `force_destroy = false`, so Terraform destroy will fail if objects exist (delete objects first).
+
 ## System diagram
 
 ```mermaid
 graph TD
   subgraph VPC[Custom VPC]
-    SUBNET[Primary Subnet]
+    SUBNET[Primary Subnet (nodes)]
     PODS[Pods secondary range]
     SVC[Services secondary range]
+    ROUTER[Cloud Router]
     NAT[Cloud NAT]
   end
 
   subgraph GKE[GKE Cluster]
-    CP[Control plane]
-    NP[Node pool]
+    CP[Control plane (Google-managed)]
+    NP[Node pool (VMs)]
+    POD[Pods]
   end
 
   SA[Node service account]
+  APIS[Google APIs]
   BUCKET[GCS bucket]
 
   SUBNET --> PODS
   SUBNET --> SVC
+
   SUBNET --> NP
-  NAT --> SUBNET
+  PODS --> POD
+
+  NP --> ROUTER
+  ROUTER --> NAT
+
   CP --> NP
   SA --> NP
-  NP --> BUCKET
+  POD --> APIS --> BUCKET
+  NP --> APIS --> BUCKET
 ```

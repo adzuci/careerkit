@@ -96,7 +96,6 @@ variable "gke_node_disk_size_gb" {
 variable "gke_master_authorized_cidr" {
   type        = string
   description = "CIDR allowed to access GKE master endpoint."
-  default     = "0.0.0.0/0"
 }
 
 variable "gcs_bucket_name" {
