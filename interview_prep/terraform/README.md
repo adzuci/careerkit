@@ -44,7 +44,7 @@ If you have discovered this and are prepping for your own interview, start here:
 
 ## Notes for infra-focused roles
 
-For infrastructure roles like the Apollo Infrastructure Engineering Manager posting, interviewers tend to probe reliability, observability, incident response, and cost tradeoffs in addition to raw implementation details. Keep a few concrete examples ready: how you would define SLOs, respond to production incidents, and manage cloud costs at scale. Reference: [Apollo Engineering Manager, Infrastructure](https://job-boards.greenhouse.io/apolloio/jobs/5670454004).
+For infrastructure roles, interviewers tend to probe reliability, observability, incident response, and cost tradeoffs in addition to raw implementation details. Keep a few concrete examples ready: how you would define SLOs, respond to production incidents, and manage cloud costs at scale.
 
 ## Runbook
 
