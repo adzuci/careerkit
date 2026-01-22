@@ -280,7 +280,15 @@ def generate_synthetic_data(
     X = np.random.randn(n_samples, n_features).astype(np.float32)
     # Create linearly separable classes with some noise
     y = (X[:, 0] + X[:, 1] + np.random.randn(n_samples) * 0.5)
-    y = np.digitize(y, bins=[-1, 1]) 
+    # Use n_classes to determine the number of bins; preserve current behavior
+    # when n_classes == 3 by keeping the fixed thresholds at -1 and 1.
+    if n_classes == 3:
+        bins = [-1, 1]
+    else:
+        y_min, y_max = y.min(), y.max()
+        # n_classes classes require n_classes - 1 bin edges
+        bins = np.linspace(y_min, y_max, num=n_classes - 1).astype(np.float32)
+    y = np.digitize(y, bins=bins)
     
     # Train/val split
     split_idx = int(0.8 * n_samples)
