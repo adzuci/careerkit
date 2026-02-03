@@ -8,9 +8,6 @@ Usage:
     python interview_prep/ml/huggingface/pipelines_and_inference.py
 """
 
-from typing import List, Dict, Any
-
-
 def text_classification_example():
     """
     Sentiment analysis / text classification pipeline.

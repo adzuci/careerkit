@@ -28,6 +28,8 @@ def tensor_basics():
     randn = torch.randn(2, 3)  # Normal distribution
     
     print(f"Zeros shape: {zeros.shape}")
+    print(f"Ones shape: {ones.shape}")
+    print(f"Rand (uniform):\n{rand}")
     print(f"Randn:\n{randn}")
     
     # From NumPy (common in interviews)
@@ -35,7 +37,8 @@ def tensor_basics():
     np_arr = np.array([1, 2, 3])
     tensor_from_np = torch.from_numpy(np_arr)  # Shares memory!
     tensor_copy = torch.tensor(np_arr)  # Creates copy
-    print(f"From numpy: {tensor_from_np}")
+    print(f"From numpy (shared memory): {tensor_from_np}")
+    print(f"From numpy (copy): {tensor_copy}")
     
     # Shape operations
     x = torch.randn(2, 3, 4)

@@ -13,7 +13,6 @@ import pytest
 import torch
 import torch.nn as nn
 import numpy as np
-from torch.utils.data import DataLoader
 
 # Import from our training module
 from model_training_loop import (

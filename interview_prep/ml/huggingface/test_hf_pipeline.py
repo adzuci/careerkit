@@ -202,9 +202,8 @@ class TestPerformance:
         """Single inference should complete in reasonable time."""
         import time
         
-        start = time.time()
+        # Warmup inference (can be slow on first run)
         _ = sentiment_pipeline("Test sentence for timing.")
-        elapsed = time.time() - start
         
         # First inference might be slow due to warmup
         # Subsequent should be < 1 second for simple text
