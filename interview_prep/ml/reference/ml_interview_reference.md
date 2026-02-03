@@ -145,6 +145,52 @@ r2 = r2_score(y_true, y_pred)
 
 ---
 
+## Interview Q&A (Feb 2026)
+
+### What is AWS Bedrock Knowledge Base?
+- Managed RAG abstraction that ingests docs (e.g., S3), chunks + embeds them
+- Stores vectors in a backing store (OpenSearch Serverless or Aurora pgvector)
+- Retrieves relevant chunks at query time and injects into FM prompts
+- The vector DB is a dependency, not the product; Bedrock KB manages the glue
+
+### Have you used binary classification in production?
+**Option A (truthful when not end-to-end owner):**
+- Not one I personally owned end-to-end in production
+- I worked adjacent to production classification systems and shipped ML-adjacent logic
+- My hands-on binary classifiers were in project or applied research settings
+
+**Option B (MassMutual example):**
+- Used a rule-based early decisioning gate for underwriting
+- Implemented in Alteryx Promote and evaluated alongside a random forest
+- The gate reduced cost/latency and improved downstream data quality by handling obvious cases
+
+**Follow-up: "So did you train a classifier?"**
+- In that case, no, I did not train the initial gate as a learned classifier
+- It was designed to shape data distribution, cut unnecessary inference, and improve system-level precision/cost
+
+### Do you know the bias-variance tradeoff?
+- High bias = underfitting (model too simple)
+- High variance = overfitting (model too complex)
+- Goal is generalization; mitigations include regularization, CV, and more data
+
+### What is hyperparameter optimization?
+- Tuning non-learned settings (e.g., learning rate, regularization, depth)
+- Done to improve generalization and reduce overfitting
+
+### What is data leakage?
+- Training uses information from outside the training window or test data
+- Causes overly optimistic metrics that fail in production
+- Includes leakage from future data, target proxies, or improper feature joins
+
+### Open questions to draft
+- Choosing binary classification metrics and production tradeoffs
+- End-to-end ML pipeline from raw data to deployed model
+- Detecting and preventing data leakage in an ML pipeline
+- Responding to model performance degradation in production
+- Designing safe continuous retraining
+
+---
+
 ## Tradeoffs and "Why" Explanations
 
 ### Why use CrossEntropyLoss over manual softmax + NLLLoss?
