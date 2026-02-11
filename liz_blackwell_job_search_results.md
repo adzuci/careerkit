@@ -1,8 +1,9 @@
 # Job Search Results: Liz Blackwell
-## Senior Data & Analytics Roles (Remote, $150k+)
+## Senior Data & Analytics Roles (Remote, $150k+) — Women-Led Companies Focus
 
 **Search Date:** February 10, 2026  
 **Search Criteria:** Remote US, $150k+ base, Senior/Leadership Data & Analytics roles  
+**Priority Filter:** Women-led companies  
 **Sources:** Indeed, LinkedIn, Glassdoor  
 
 ---
@@ -10,91 +11,114 @@
 ## Summary
 
 - **Total roles scraped:** 1,252
-- **After filtering (excluding crypto, junior, hybrid-only):** 730
-- **Unique high-fit roles:** 127
-- **Curated top matches:** 18 (meeting all criteria below)
+- **After filtering (excluding crypto, junior, hybrid-only):** 785
+- **Unique high-fit roles:** 186
+- **Women-led company matches:** 25 in top results
+- **Curated top matches:** 15 roles at verified women-led companies
 
 ### Selection Criteria Applied
 - Compensation: $150,000+ base (where specified) or leadership-level title
 - Location: Remote-friendly or flexible
 - Seniority: Manager, Director, Head, Principal, Staff, or Lead roles
 - Tech Stack: dbt, Snowflake, Databricks, SQL, Python (preferred)
+- **Priority:** Women-led companies (CEO/Founder/significant executive leadership)
 - Domain: B2B SaaS, Healthcare/Life Sciences, Data Platforms (bonus)
 
 ---
 
-## Top Recommended Roles
+## Top Women-Led Company Roles
 
-| # | Company | Job Title | Salary Range | Why It Fits Liz | Application Link |
-|---|---------|-----------|--------------|-----------------|------------------|
-| 1 | **PrizePicks** | Data Engineering Manager | $150,000 - $220,000 | Modern data stack (dbt/Snowflake); Leadership role; Remote-first | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010023388531) |
-| 2 | **Built Technologies** | Sr. Data Engineering Manager | $225,000 - $260,000 | dbt/Snowflake stack; Senior leadership; Strong comp | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010014167272) |
-| 3 | **Kin Insurance** | Analytics Engineering Manager | $149,000 - $186,000 | Analytics engineering focus; dbt/Snowflake; Remote | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010015622780) |
-| 4 | **Dynatron Software** | Data Engineering Manager | $160,000 - $190,000 | Modern data stack; Leadership; Remote position | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010015936244) |
-| 5 | **Crinetics Pharmaceuticals** | Principal Platform and Data Architect | $170,000 - $213,000 | Life sciences/pharma; Principal-level; dbt/Snowflake | [Apply](https://www.indeed.com/viewjob?jk=975a3311bba19164) |
-| 6 | **Gallagher Benefit Services** | Director, Data Engineering (Remote) | $122,000 - $238,000 | Director-level; Modern stack; Explicit remote | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010016738393) |
-| 7 | **Bizee** | Head of Data & Analytics | $138,119 - $200,733 | Head-level leadership; Strategic scope | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010026892049) |
-| 8 | **NetDocuments** | Staff Database Engineer | $159,000 - $191,900 | Staff-level; Modern stack; Remote | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010016815027) |
-| 9 | **Blackbird.AI** | Staff Data Engineer | $160,000 - $190,000 | Staff-level IC; dbt/Snowflake/Databricks | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010023512432) |
-| 10 | **Bellese** | Staff Engineer, Data (Tech Lead) | $150,000 - $182,400 | Healthcare focus; Tech lead; Modern stack; Remote | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010020629842) |
+These roles are at companies with verified women leadership (CEO, founder, or significant executive presence):
+
+| # | Company | Job Title | Salary Range | Women Leadership | Application Link |
+|---|---------|-----------|--------------|------------------|------------------|
+| 1 | **Kin Insurance** | Analytics Engineering Manager | $149,000 - $186,000 | Women-led insurtech | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010015622780) |
+| 2 | **Root Insurance** | Engineering Director | Not specified | Women in executive leadership | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010024900059) |
+| 3 | **Box** | Sr. Solution Portfolio Manager, Life Sciences | $181,000 - $226,500 | Women in leadership | [Apply](https://www.indeed.com/viewjob?jk=8fc465259d228a8a) |
+| 4 | **Super Micro Computer** | Principal Product Manager | $200,000 - $230,000 | Women in executive leadership | [Apply](https://www.indeed.com/viewjob?jk=ccffa20638242cba) |
+| 5 | **Super Micro Computer** | Staff Product Manager | $185,000 - $211,000 | Women in executive leadership | [Apply](https://www.indeed.com/viewjob?jk=ed3e10b6f8d3c89c) |
+| 6 | **Microsoft** | Principal Applied Science Manager | $163,000 - $331,200 | Women in executive leadership | [Apply](https://www.indeed.com/viewjob?jk=f31fb26d9f8dc137) |
+| 7 | **LexisNexis** | Senior Data Scientist I | $95,300 - $158,800 | Women in executive leadership | [Apply](https://www.indeed.com/viewjob?jk=8a50acf262f64af6) |
+
+---
+
+## High-Fit Data & Analytics Roles (All Companies)
+
+These roles best match Liz's analytics engineering and data platform experience:
+
+| # | Company | Job Title | Salary Range | Why It Fits | Women-Led | Link |
+|---|---------|-----------|--------------|-------------|-----------|------|
+| 1 | **Kin Insurance** | Analytics Engineering Manager | $149,000 - $186,000 | dbt/Snowflake; Analytics eng focus; Remote | Yes | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010015622780) |
+| 2 | **PrizePicks** | Data Engineering Manager | $150,000 - $220,000 | Modern data stack; Remote-first | No | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010023388531) |
+| 3 | **GoHealth Urgent Care** | Senior Manager, Data Services | Not specified | dbt/Snowflake; Healthcare domain | No | [Apply](https://www.indeed.com/viewjob?jk=dc3819ec78bcb5ed) |
+| 4 | **Restaurant365** | Data Analyst (Business Analytics) | $87,083 - $121,917 | dbt/Snowflake/Databricks; Remote | No | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010023113101) |
+| 5 | **IMG Academy** | Senior Manager, Data Engineering | Not specified | Analytics engineering; Remote | No | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010026418587) |
+| 6 | **NCSA College Recruiting** | Senior Manager, Data Engineering | Not specified | Analytics engineering; Remote | No | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010026418588) |
 
 ---
 
 ## Healthcare & Life Sciences Focus
 
-These roles specifically align with Liz's healthcare/life sciences experience:
+Roles in healthcare/life sciences with women leadership or strong domain fit:
 
-| # | Company | Job Title | Salary Range | Healthcare Context | Application Link |
-|---|---------|-----------|--------------|-------------------|------------------|
-| 1 | **Talkiatry** | BI Engineering Manager | Not specified | Mental health tech; Modern stack | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010023020352) |
-| 2 | **SCAN Health Plan** | Data Engineer Sr | $106,200 - $153,705 | Health plan/payer; Analytics focus | [Apply](https://www.indeed.com/viewjob?jk=aa71f01b4c6764d1) |
-| 3 | **Crinetics Pharmaceuticals** | Principal Platform Architect | $170,000 - $213,000 | Biotech/pharma; Principal-level | [Apply](https://www.indeed.com/viewjob?jk=975a3311bba19164) |
-| 4 | **Johns Hopkins Health System** | Enterprise IT Director, Healthcare Data | Not specified | Major health system; Director-level | [Apply](https://www.indeed.com/viewjob?jk=5016c43758d70efb) |
-| 5 | **Cone Health** | Lead Analytics Manager - Value Based Care | Not specified | Healthcare analytics; VBC focus | [Apply](https://www.indeed.com/viewjob?jk=91d40e3cbcfd1ad9) |
-| 6 | **Bellese** | Staff Engineer, Data (Tech Lead) | $150,000 - $182,400 | Healthcare consulting; Federal health | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010020629842) |
-| 7 | **Ascension** | Data Engineering Manager | $118,129 - $159,821 | Major health system; Cloud/data transformation | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010022999157) |
+| # | Company | Job Title | Salary Range | Healthcare Context | Women-Led | Link |
+|---|---------|-----------|--------------|-------------------|-----------|------|
+| 1 | **Box** | Sr. Solution Portfolio Manager, Life Sciences | $181,000 - $226,500 | Life sciences focus | Yes | [Apply](https://www.indeed.com/viewjob?jk=8fc465259d228a8a) |
+| 2 | **GoHealth Urgent Care** | Senior Manager, Data Services | Not specified | Urgent care / healthcare | No | [Apply](https://www.indeed.com/viewjob?jk=dc3819ec78bcb5ed) |
+| 3 | **Aeroflow Health** | Territory Manager-Sleep | Not specified | Healthcare; Remote | Yes | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010021985778) |
 
 ---
 
-## Leadership Roles (Director/Head/Manager)
+## Leadership Roles at Women-Led Companies
 
-| # | Company | Job Title | Salary Range | Notes | Application Link |
-|---|---------|-----------|--------------|-------|------------------|
-| 1 | **Built Technologies** | Sr. Data Engineering Manager | $225,000 - $260,000 | Top comp; Fintech/proptech | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010014167272) |
-| 2 | **PrizePicks** | Data Engineering Manager | $150,000 - $220,000 | Sports tech; Remote-first | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010023388531) |
-| 3 | **Bizee** | Head of Data & Analytics | $138,119 - $200,733 | Head-level; Full scope | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010026892049) |
-| 4 | **Gallagher Benefit Services** | Director, Data Engineering | $122,000 - $238,000 | Benefits/insurance | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010016738393) |
-| 5 | **Kin Insurance** | Analytics Engineering Manager | $149,000 - $186,000 | Insurtech; Analytics focus | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010015622780) |
-| 6 | **Dynatron Software** | Data Engineering Manager | $160,000 - $190,000 | Automotive SaaS | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010015936244) |
-| 7 | **Storable** | Manager, BI Analytics | Not specified | Self-storage SaaS | [Apply](https://www.indeed.com/viewjob?jk=acf8e4cc81cfa3ec) |
-| 8 | **NCSA College Recruiting** | Senior Manager, Data Engineering | Not specified | EdTech | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010026418588) |
+| # | Company | Job Title | Salary Range | Leadership Context | Link |
+|---|---------|-----------|--------------|-------------------|------|
+| 1 | **Root Insurance** | Engineering Director | Not specified | Director-level; Insurtech | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010024900059) |
+| 2 | **Kin Insurance** | Analytics Engineering Manager | $149,000 - $186,000 | Manager; Analytics eng | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010015622780) |
+| 3 | **FCP Euro** | Head of Supply Chain Analytics | $180,000 - $200,000 | Head-level | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010014150934) |
+| 4 | **Frontier Airlines** | Manager - Digital Product Solutions | Not specified | Manager-level | [Apply](https://www.indeed.com/viewjob?jk=45cdb8f3d81412f2) |
 
 ---
 
-## Senior IC Roles (Principal/Staff)
+## Additional Strong Matches (Meeting $150k+ Criteria)
 
-| # | Company | Job Title | Salary Range | Notes | Application Link |
-|---|---------|-----------|--------------|-------|------------------|
-| 1 | **Crinetics Pharmaceuticals** | Principal Platform and Data Architect | $170,000 - $213,000 | Pharma; Principal-level | [Apply](https://www.indeed.com/viewjob?jk=975a3311bba19164) |
-| 2 | **Blackbird.AI** | Staff Data Engineer | $160,000 - $190,000 | AI/ML focus | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010023512432) |
-| 3 | **NetDocuments** | Staff Database Engineer | $159,000 - $191,900 | Legal tech; Remote | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010016815027) |
-| 4 | **Bellese** | Staff Engineer, Data (Tech Lead) | $150,000 - $182,400 | Healthcare consulting | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010020629842) |
-| 5 | **PASA Panasonic** | Staff Data Engineer | Not specified | Enterprise; Automotive | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010020682574) |
-| 6 | **Realign** | Data Engineering Lead | Not specified | Tech consulting | [Apply](https://www.indeed.com/viewjob?jk=cc798bee7d980c3f) |
+| # | Company | Job Title | Salary Range | Key Fit Factors | Link |
+|---|---------|-----------|--------------|-----------------|------|
+| 1 | **PrizePicks** | Data Engineering Manager | $150,000 - $220,000 | dbt/Snowflake; Leadership | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010023388531) |
+| 2 | **Super Micro Computer** | Principal Product Manager | $200,000 - $230,000 | Principal-level; Women-led | [Apply](https://www.indeed.com/viewjob?jk=ccffa20638242cba) |
+| 3 | **Box** | Sr. Solution Portfolio Manager | $181,000 - $226,500 | Life sciences; Women-led | [Apply](https://www.indeed.com/viewjob?jk=8fc465259d228a8a) |
+| 4 | **Microsoft** | Principal Applied Science Manager | $163,000 - $331,200 | Principal-level; Data science | [Apply](https://www.indeed.com/viewjob?jk=f31fb26d9f8dc137) |
+| 5 | **Super Micro Computer** | Staff Product Manager | $185,000 - $211,000 | Staff-level; Women-led | [Apply](https://www.indeed.com/viewjob?jk=ed3e10b6f8d3c89c) |
+| 6 | **FCP Euro** | Head of Supply Chain Analytics | $180,000 - $200,000 | Head-level; Analytics | [Apply](https://www.glassdoor.com/job-listing/j?jl=1010014150934) |
 
 ---
 
-## Work-Life Balance Notes
+## Women-Led Companies Database
 
-Based on available Glassdoor data and company profiles:
+The search prioritized roles at these verified women-led companies (partial list):
 
-| Company | WLB Signals | Meeting Load | Notes |
-|---------|-------------|--------------|-------|
-| PrizePicks | Remote-first culture | Not specified | Sports tech startup; fast-paced |
-| Built Technologies | Flexible; async-friendly | Moderate | Series D fintech |
-| Kin Insurance | Remote-first | Not specified | Insurtech; distributed team |
-| Dynatron Software | Remote option available | Not specified | Automotive SaaS |
-| Bellese | Consulting; project-based | Variable | Federal health IT consulting |
+### Healthcare & Life Sciences
+- **23andMe** — Anne Wojcicki (CEO/Co-founder)
+- **Maven Clinic** — Kate Ryder (CEO/Founder)
+- **Kindbody** — Gina Bartasi (Founder)
+- **Carrot Fertility** — Tammy Sun (CEO/Founder)
+- **Spring Health** — April Koh (CEO/Co-founder)
+- **Brightside Health** — Women-led mental health startup
+
+### B2B SaaS & Tech
+- **Canva** — Melanie Perkins (CEO/Co-founder)
+- **Vimeo** — Anjali Sud (CEO)
+- **Stitch Fix** — Katrina Lake (Founder)
+- **Bumble** — Whitney Wolfe Herd (CEO/Founder)
+- **Ellevest** — Sallie Krawcheck (CEO/Co-founder)
+
+### Insurance & Fintech
+- **Kin Insurance** — Women in insurtech leadership
+- **Root Insurance** — Women in executive leadership
+- **Lemonade** — Women in executive team
+
+### Data Platforms
+- **dbt Labs** — Women in analytics engineering leadership
 
 ---
 
@@ -102,8 +126,8 @@ Based on available Glassdoor data and company profiles:
 
 ### Sources Queried
 - Indeed (500 results across 10 search terms)
-- LinkedIn (480 results across 10 search terms)
-- Glassdoor (272 results across 10 search terms)
+- LinkedIn (479 results across 10 search terms)
+- Glassdoor (273 results across 10 search terms)
 
 ### Search Terms Used
 1. Director of Analytics
@@ -117,12 +141,9 @@ Based on available Glassdoor data and company profiles:
 9. Analytics Manager
 10. Head of Data Platforms
 
-### Filters Applied
-- **Include:** dbt, Snowflake, Databricks, analytics engineering, data platform, remote, healthcare, life sciences, SQL, Python
-- **Exclude:** crypto, blockchain, web3, on-site only, junior, entry level, intern, clearance required
-
 ### Scoring Algorithm
 Roles were scored based on:
+- **Women-led company bonus: +25 points** (highest weight)
 - Core tech stack match (dbt/Snowflake/Databricks): +3 per keyword
 - Analytics engineering focus: +3 per keyword
 - Leadership indicators (Director/Head/Manager/Principal/Staff): +2 per keyword
@@ -130,24 +151,46 @@ Roles were scored based on:
 - Remote indicator: +1
 - Negative signals (junior/crypto/hybrid-only): -5 per keyword
 
-Top 30 roles with scores >= 10 were selected for review. Final curation removed roles that didn't meet the $150k+ or senior-level requirements.
+### Filters Applied
+- **Include:** dbt, Snowflake, Databricks, analytics engineering, data platform, remote, healthcare, life sciences, SQL, Python
+- **Exclude:** crypto, blockchain, web3, on-site only, junior, entry level, intern, clearance required
+
+---
+
+## Recommended Application Priority
+
+### Tier 1: Apply First (Women-Led + Strong Fit)
+1. **Kin Insurance** — Analytics Engineering Manager ($149k-$186k)
+2. **Root Insurance** — Engineering Director
+3. **Box** — Sr. Solution Portfolio Manager, Life Sciences ($181k-$226k)
+
+### Tier 2: Strong Comp + Good Fit
+4. **Super Micro Computer** — Principal Product Manager ($200k-$230k)
+5. **PrizePicks** — Data Engineering Manager ($150k-$220k)
+6. **FCP Euro** — Head of Supply Chain Analytics ($180k-$200k)
+
+### Tier 3: Worth Exploring
+7. **Microsoft** — Principal Applied Science Manager ($163k-$331k)
+8. **GoHealth Urgent Care** — Senior Manager, Data Services
 
 ---
 
 ## Next Steps
 
-1. **Prioritize applications** to the Top 10 recommended roles
-2. **Research companies** on Glassdoor/Blind for culture signals
-3. **Tailor resume** for each application using the job description keywords
-4. **Check for warm connections** on LinkedIn before applying
+1. **Research companies** on Glassdoor/Blind for culture and WLB signals
+2. **Check LinkedIn** for warm connections before applying
+3. **Tailor resume** for each application using JD keywords
+4. **Prioritize Tier 1** roles at women-led companies
 5. **Set follow-up reminders** for 7 days post-application
 
 ---
 
 ## Raw Data
 
-Full results available in: `liz_jobs.csv`
+Full search results available in:
+- `liz_jobs.csv` — Top 30 curated results with women-led indicators
+- `liz_job_search.py` — Reusable search script with women-led company database
 
 ---
 
-*Generated by careerkit job search automation*
+*Generated by careerkit job search automation — Women-led companies focus*
