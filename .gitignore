@@ -32,3 +32,8 @@ __pycache__/
 .eggs/
 dist/
 build/
+
+# Local job-search automation outputs
+julia_mel_jobspy_results.csv
+julia_mel_jobspy_results.md
+julia_mel_job_feedback.csv
