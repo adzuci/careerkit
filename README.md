@@ -100,6 +100,7 @@ A great job search for engineering leaders is:
 3. Open:
   - Your focus playlist (e.g. [**Spotify "House Focus"**](https://open.spotify.com/playlist/37i9dQZF1DX8wtrGDH81Oa))
   - Your tracker sheet or Simplify/TealHQ  
+- [ResumeAI](https://withresumeai.com/) — free ATS checker + open State of ATS 2026 dataset
   - ChatGPT, NotebookLM, or your AI coach of choice, ideally with a project or agent that has a tailored system prompt  
   - Resume templates & company notes Drive folders
 4. Review what's in your "Applied" column and update information, follow up if you haven't been in contact for over a week
